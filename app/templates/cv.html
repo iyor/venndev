@@ -1,92 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>venn - CV</title>
 		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="/app/static/css/cv.css" />
+		<link rel="stylesheet" href="../static/css/cv.css" />
+		<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<nav>
 			<ul>
-				<li>ABOUT</li>
-				<li>SKILLS</li>
-				<li>ATTRIBUTES</li>
-				<li>PROJECTS</li>
+				<li><a href="#intro" class="active">ABOUT</a></li>
+				<li><a href="#skills">SKILLS</a></li>
+				<li><a href="#education">EDUCATION</a></li>
+				<li><a href="#experience">EXPERIENCE</a></li>
+				<li><a href="#attributes">ATTRIBUTES</a></li>
+				<li><a href="#projects">PROJECTS</a></li>
 			</ul>
 		</nav>
 		<h1>Curriculum Vitae</h1>
-		<section id="intro">
-			Hard-working computer science student with a strong background in design. Has maintained well-above average academic results despite elevated course load. Articulate as well as highly comfortable working in groups. Passionate programmer preparing for a career in software engineering 
+		<section id="intro" class="target">
+			<img src="/static/img/erik.svg" height="300" width="741" alt="Erik Logo" id="logo"/>
+			<p id="name">ERIK JANSSON</p>
+			<div id="gistContainer">
+				<aside id="titlepic"/>
+					<h2>THE GIST</h2>
+					<img src="/static/img/portrait.jpg" height="225" width="225" alt="portrait"/>
+				</aside>
+				<aside id="description">
+					<p class="aboutText" id="aboutText1">
+						Hard-working computer science student with a strong background in design.
+					</p>
+					<p class="aboutText" id="aboutText2">
+						Has maintained well-above average academic results despite elevated course load. 
+					</p>
+					<p class="aboutText" id="aboutText3">
+						Passionate programmer preparing for a career in software engineering 
+					</p>
+				</aside>
+			</div>
+			<div class="floatClearer"></div>
 		</section>
-		<section id="skills">
+		<section id="skills" class="target">
 			<div id="sh1" class="sectionhead">
+				<img src="/static/img/skillsIcon.svg" height="225" width="225" alt="Skills"/>
 				<h2>SKILLS</h2>
 			</div>
-			<h3>LANGUAGES</h3>
-			<ul id="languages">
-				<li>Java</li>
-				<li>Python</li>
-				<li>HTML/CSS</li>
-			</ul>
-			<h3>FRAMEWORKS/LIBRARIES</h3>
-			<ul id="fra/libs">
-				<li>Android</li>
-				<li>libGDX</li>
-				<li>Flask</li>
-				<li>nose/JUnit</li>
-			</ul>
-			<h3>SOFTWARE</h3>
-			<ul id="software">
-				<li>Git</li>
-				<li>Photoshop</li>
-				<li>Illustrator</li>
-			</ul>
+			<div class="arrow-down"></div>
+			<div id="sb1" class="sectionbody">
+				<table>
+					<thead>
+						<tr>
+							<th>LANGUAGES</th>
+							<th>FRAMEWORKS/LIBRARIES</th>
+							<th>SOFTWARE</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Java</td>
+							<td>Android</td>
+							<td>Git</td>
+						</tr>
+						<tr>
+							<td>Python</td>
+							<td>libGDX</td>
+							<td>Photoshop</td>
+						</tr>
+						<tr>
+							<td>HTML/CSS</td>
+							<td>Flask</td>
+							<td>Illustrator</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>nose/JUnit</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</section>
-		<section id="education">
+		<section id="education" class="target">
 			<div id="sh2" class="sectionhead">
+				<img src="/static/img/eduIcon.svg" height="220" width="379" alt="Education"/>
 				<h2>EDUCATION</h2>
 			</div>
+			<div class="arrow-down"></div>
+			<div id="sb2" class="sectionbody">
 			<h3>Chalmers University of Technology</h3>
 			<em>Software Engineering, 3rd year</em>
 			<br>
-			Will complete Bachelor’s Degree in Software Engineering in May. Has taken numerous design courses beyond the normal course load and will as a result have completed 1.33 Bachelor’s Degrees in 3 years.
+				<p>
+					Will complete Bachelor’s Degree in Software Engineering in May. Has taken numerous design courses beyond the normal course load and will as a result have completed 1.33 Bachelor’s Degrees in 3 years.
+				</p>
+			</div>
 		</section>
-		<section id="characteristics">
+		<section id="experience" class="target">
 			<div id="sh3" class="sectionhead">
+				<img src="/static/img/expIcon.svg" height="225" width="272" alt="Experience"/>
+				<h2>EXPERIENCE</h2>
+			</div>
+			<div class="arrow-down"></div>
+			<div id="sb3" class="sectionbody">
+				<h3>Beijer Byggmaterial</h3>
+				<em>Full-time: May 2013 - August 2014</em>
+				<br>
+				<em>Part-time: April 2011 - July 2016</em>
+				<p>
+					Worked with customers and others in sales team in a competitive environment. Handled customer-relations, order negotiations, and incoming order logistics.
+				</p>
+				<br>
+				<br>
+				<h3>Student Union Volunteer Work, Chalmers University of Technology</h3>
+				<em>March 2015 - February 2016</em>
+				<br>
+				<p>
+				Has worked in groups setting up events for new students and organizing sporting events for up to 150 people.
+				</p>
+			</div>
+		</section>
+		<section id="attributes" class="target">
+			<div id="sh4" class="sectionhead">
+				<img src="/static/img/attrIcon.svg" height="225" width="227" alt="Attributes"/>
 				<h2>PERSONAL ATTRIBUTES</h2>
 			</div>
-			<table>
-				<tr>
-					<th>Fast learner</th>
-					<td>Quickly grasps unfamiliar concepts and problems</td>
-				</tr>
-				<tr>
-					<th>Skilled communicator</th>
-					<td>Can easily connect with both customers and teammates thanks to prior sales experience. Has worked in a multitude of group projects and utilized Scrum.</td>
-				</tr>
-				<tr>
-					<th>Problem solver</th>
-					<td>Efficient yet flexible in the face of daunting complex tasks</td>
-				</tr>
-				<tr>
-					<th>Enthusiastic</th>
-					<td>Passionate and fascinated by programming, design and always wanting to learn more</td>
-				</tr>
-			</table>
+			<div class="arrow-down"></div>
+			<div id="sb4" class="sectionbody">
+				<table>
+					<tr>
+						<th>Fast learner</th>
+						<td>Quickly grasps unfamiliar concepts and problems</td>
+					</tr>
+					<tr>
+						<th>Skilled communicator</th>
+						<td>Can easily connect with both customers and teammates thanks to prior sales experience. Has worked in a multitude of group projects and utilized Scrum.</td>
+					</tr>
+					<tr>
+						<th>Problem solver</th>
+						<td>Efficient yet flexible in the face of daunting complex tasks</td>
+					</tr>
+					<tr>
+						<th>Enthusiastic</th>
+						<td>Passionate and fascinated by programming, design and always wanting to learn more</td>
+					</tr>
+				</table>
+			</div>
 		</section>
-		<section id="projects">
-			<div id="sh4" class="sectionhead">
+		<section id="projects" class="target">
+			<div id="sh5" class="sectionhead">
+				<img src="/static/img/projIcon.svg" height="225" width="227" alt="Projects"/>
 				<h2>PROJECTS</h2>
 			</div>
-			<div id="1">
-			</div>
-			<div id="2">
-			</div>
-			<div id="3">
+			<div class="arrow-down"></div>
+			<div id="sb5" class="sectionbody">
+				
+					<a href="https://github.com/fishur/NUCLEUS">
+				<div id="project1" class="project">
+						<h3>NUCLEUS</h3>
+						<p>
+							A mobile game prototype created with the libGDX framework
+						</p>
+				</div>
+					</a>
+				<a href="https://twitter.com/MarkovTweetson">
+					<div id="project2" class="project">
+						<h3>MARKOV TWEETSON</h3>
+						<p>
+							A twitterbot profile that generates its own tweets based on other’s tweets with the help of Markov chains
+						</p>
+					</div>
+				</a>
+				<a href="https://github.com/drualsk/RefugeeMap">	
+					<div id="project3" class="project">
+						<h3>MOMTEE</h3>
+						<p>
+							An app intended to help newly arrived refugees in Sweden integrate into society
+						</p>
+					</div>
+				</a>
+				<div class="floatClearer"></div>
+				<a href="https://github.com/iyor">
+					<div id="githublink">
+						<strong>GITHUB</strong>
+					</div>
+				</a>
 			</div>
 		</section>
 		<footer>
 		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script src="../static/js/nav.js"></script>
 	</body>
 </html>
 
