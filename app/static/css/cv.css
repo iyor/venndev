@@ -81,7 +81,7 @@ h2 {
 }
 section img {
 	display: block;
-	padding: 1.5em;
+	padding: 1.5em 0;
 }
 
 section {
