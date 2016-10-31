@@ -24,7 +24,7 @@
 			<div id="gistContainer">
 				<aside id="titlepic"/>
 					<h2>THE GIST</h2>
-					<img src="/static/img/portrait.png" height="250" width="250" alt="portrait"/>
+					<img src="/static/img/portrait.png" id="portrait" height="250" width="250" alt="portrait"/>
 				</aside>
 				<aside id="description">
 					<p class="aboutText" id="aboutText1">
@@ -47,38 +47,20 @@
 			</div>
 			<div class="arrow-down"></div>
 			<div id="sb1" class="sectionbody">
-				<table>
-					<thead>
-						<tr>
-							<th>LANGUAGES</th>
-							<th>FRAMEWORKS/LIBRARIES</th>
-							<th>SOFTWARE</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Java</td>
-							<td>Android</td>
-							<td>Git</td>
-						</tr>
-						<tr>
-							<td>Python</td>
-							<td>libGDX</td>
-							<td>Photoshop</td>
-						</tr>
-						<tr>
-							<td>HTML/CSS</td>
-							<td>Flask</td>
-							<td>Illustrator</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td>nose/JUnit</td>
-							<td></td>
-						</tr>
-					</tbody>
-				</table>
+				<div id="languages" class="skillstable">
+					<h3>LANGUAGES</h3>
+					Java<br>Python<br>HTML/CSS
+				</div>
+				<div id="libs" class="skillstable">
+					<h3>FRAMEWORKS/LIBRARIES</h3>
+					Android<br>libGDX<br>Flask<br>nose/JUnit
+				</div>
+				<div id="software" class="skillstable">
+					<h3>SOFTWARE</h3>
+					Git<br>Photoshop<br>Illustrator<br>
+				</div>
 			</div>
+			<div class="floatClearer"></div>
 		</section>
 		<section id="education" class="target">
 			<div id="sh2" class="sectionhead">
